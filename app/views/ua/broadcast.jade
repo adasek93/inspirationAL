@@ -1,0 +1,23 @@
+extends ../layouts/home
+
+block style
+  style.
+    #message {
+      width: 400px
+    }
+
+block title
+  title New push notification
+
+block content
+  if message
+    div#reponse
+      h2=message
+
+  h1 Broadcast a new push notification
+  form(action="/v1/ua/broadcast", method="POST")
+    label(for="message") Message:
+    input(type="text", name="message", id="message", placeholder="Message to be broadcasted")
+    br/
+    br/
+    input(type="submit", value="Broadcast")

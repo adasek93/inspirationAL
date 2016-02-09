@@ -1,0 +1,8 @@
+node_modules/
+.vagrant/
+coverage/
+dump/
+
+*.sw?
+.DS_Store
+*.log

@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register tests/_helper.coffee --reporter spec --ui bdd $1

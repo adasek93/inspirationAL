@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+NODE_ENV=staging ./node_modules/forever/bin/forever start -m 5 -al ~/logs/staging.log  server.js
